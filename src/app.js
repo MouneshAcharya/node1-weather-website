@@ -9,6 +9,7 @@ const fore = require('./utils/forecast');
 //console.log(path.join(__dirname));
 //console.log(path.join(__dirname,'../public'));
 
+
 // define path for express config
 const publicDir = path.join(__dirname,'../public');
 const viewPath = path.join(__dirname,'../templates/views');
