@@ -15,6 +15,7 @@ const publicDir = path.join(__dirname,'../public');
 const viewPath = path.join(__dirname,'../templates/views');
 const partialPath = path.join(__dirname,'../templates/partials');
 const app = express(); 
+const port = process.env.PORT || 3000;
 
 //setup handle bar engine and views location
 app.set('view engine', 'hbs');
@@ -126,8 +127,8 @@ app.get('*', (req,res)=>{
     });
 });
 
-app.listen(3000, () => {
-    //console.log('server is up on port 3000');
+app.listen(port, () => {
+    console.log('server is up on port '+port);
 });
 
 
